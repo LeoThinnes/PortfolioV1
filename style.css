@@ -103,14 +103,14 @@ animation-name: slidein;
   }
 }
 
-#separationProfil img{
+.separationProfil img{
 	position: relative;
 	width: 100%;
 	height: auto;
 	margin-top: 15%;
 }
 
-#Profil h1{
+.Profil h1{
 	text-align: center;
 	font-size: 40px;
 	margin-top: 5%;
@@ -125,7 +125,7 @@ animation-name: slidein;
 	font-size: 20px;
 }
 
-#Profil h2{
+.Profil h2{
 	text-align: center;
 	font-size: 30px;
 	margin-top: 5%;
@@ -187,7 +187,7 @@ animation-name: slidein;
 	font-size: 16px;
 	font-style: italic;
 }
-#Profil button{
+.btnProfil{
 	display: flex;
 	margin:auto;
 	margin-top: 3%;
@@ -198,7 +198,7 @@ animation-name: slidein;
 	transition: .3s all ease-in-out;
 }
 
-#Profil button:hover{
+.btnProfil:hover{
 	transform: scale(1.1);
 	background-color: #FDA02A;
 	border: none;
@@ -206,7 +206,7 @@ animation-name: slidein;
 	transition: .3s all ease-in-out;
 }
 
-#Profil button a{
+.Profil button a{
 	text-decoration: none;
 	color: white;
 	font-size: 20px;
@@ -216,7 +216,7 @@ animation-name: slidein;
 	margin-bottom: 4px;
 }
 
-#separationProjets img{
+.separationProjets img{
 	position: relative;
 	width: 100%;
 	height: auto;
@@ -229,3 +229,66 @@ animation-name: slidein;
 	margin-top: 5%;
 	text-decoration: underline #FDA02A;
 }
+
+article {
+	display: flex;
+	width: 300px;
+	height: 260px;
+	margin-left: 7%;
+	margin-right: auto;
+	margin-top: 5%;
+	margin-bottom: auto;
+	border-radius: 5%;
+}
+
+article:hover{
+	transform: scale(1.1);
+}
+
+article .apparition{
+	display: none;
+	z-index: 999;
+}
+
+article:hover .apparition{
+	display: inline;
+	position: absolute;
+	padding: 5px 10px;
+	color: white;
+	background-color: #333;
+	border-radius: 20px;
+	border: none;
+	margin-top: 130px;
+	margin-left: 75px;
+	width: 150px;
+	z-index: 999;
+	transition: .3s all ease-in-out;
+}
+
+article .apparition:hover{
+	transform: scale(1.1);
+	background-color: #FDA02A;
+	border: none;
+	box-shadow: 2px 2px 4px  grey;
+	transition: .3s all ease-in-out;
+}
+article img{
+	width: 300px;
+	height: 260px;
+	transition: .3s all ease-in-out;
+	border-radius: 5%;
+	box-shadow: 1px 1px 5px  grey;
+	background-color: #dddd;
+}
+
+article:hover img {
+	transition: .3s all ease-in-out;
+	opacity: 0.3;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.ligneProjets{
+display: flex;
+flex-direction: row;
+	}
