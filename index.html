@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>Portfolio Léo THINNES</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen" href="css/style.css">
 </head>
 <header>
   <nav class="stroke">
     <a href="#">Accueil </a>
     <a href="#redirectionProfil">Mon Profil</a>
+    <a href="#redirectionComp">Mes Compétences</a>
     <a href="#redirectionProjet">Mes Projets</a>
     <a href="contact.php" target="_blank">Me contacter</a>
   </nav>
@@ -62,9 +63,89 @@
           </div>
         </div>
       </div>
-      <button class="btnProfil" type="button" formaction="href="ressources/CV_Leo_Thinnes.pdf""><a href="ressources/CV_Leo_Thinnes.pdf" target="_blank">Télécharger mon CV </a></button>
+      <a href="ressources/CV_Leo_Thinnes.pdf" target="_blank"><button class="btnProfil">Télécharger mon CV </button></a>
+
+
       <div class="separationProjets">
         <img src="ressources/images/html.jpg" alt="code">
+      </div>
+
+      <div id="redirectionComp">
+      </div>
+
+<div class="Comp">
+  <h1>Mes compétences</h1>
+  <div class="enligne">
+    <div class="CompCol1">
+      <h3>Langages :</h3>
+
+      <div class="CompLine">
+        <img src="ressources/images/LogoHtml.png" >
+        <progress value="85" max="100">85 %</progress>
+      </div>
+
+      <div class="CompLine">
+        <img src="ressources/images/css.png" >
+        <progress value="85" max="100">85 %</progress>
+      </div>
+
+      <div class="php">
+        <img src="ressources/images/LogoPhp.png" >
+        <progress value="75" max="100">75 %</progress>
+      </div>
+
+      <div class="CompLine">
+        <img src="ressources/images/android.png" >
+        <progress value="60" max="100">60 %</progress>
+      </div>
+
+      <div class="CompLine">
+        <img src="ressources/images/sql-logo.png" >
+        <progress value="60" max="100">60 %</progress>
+      </div>
+
+      <div class="CompLine">
+        <img src="ressources/images/C.png" >
+        <progress value="55" max="100">55 %</progress>
+      </div>
+
+      <div class="CompLine">
+        <img src="ressources/images/java.png" >
+        <progress value="45" max="100">45 %</progress>
+      </div>
+
+
+    </div>
+
+    <div class="CompCol2">
+      <h3>Logiciels :</h3>
+
+      <div class="CompLine">
+        <img src="ressources/images/atom.png" >
+        <progress value="95" max="100">95 %</progress>
+      </div>
+
+      <div class="CompLine">
+        <img src="ressources/images/eclipse.png" >
+        <progress value="80" max="100">80 %</progress>
+      </div>
+
+      <div class="CompLine">
+        <img src="ressources/images/VSCode.png" >
+        <progress value="75" max="100">75 %</progress>
+      </div>
+
+      <div class="CompLine">
+        <img src="ressources/images/AStudio.png" >
+        <progress value="70" max="100">70 %</progress>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+      <div class="separationProjets">
+        <img src="ressources/images/amp2.jpg" alt="code">
       </div>
 
       <div id="redirectionProjet">
@@ -74,45 +155,58 @@
         <h1>Mes Projets</h1>
         <div class="ligneProjets">
           <article>
-            <button type="button" class="apparition"><a href="ressources/CV_Leo_Thinnes.pdf" target="_blank"> en savoir plus.</a></button>
+            <a href="https://github.com/LeoThinnes/Combava" target="_blank"><button type="button" class="apparition"> En savoir plus.</button></a>
             <img src="ressources/images/combava.png" alt="combava">
+            <h3> &nbsp;&nbsp;&nbsp; Combava</h3>
+            <p>Réalisation d'un "one page" évenementiel pour des dégustations de limonade, pour un client fictif. </br>(Projet Universitaire)</p>
           </article>
 
           <article>
-            <button type="button" class="apparition"><a href="ressources/CV_Leo_Thinnes.pdf" target="_blank"> en savoir plus.</a></button>
+            <a href="https://github.com/LeoThinnes/spaceinvaders" target="_blank"><button type="button" class="apparition"> En savoir plus.</button></a>
             <img src="ressources/images/space.png" alt="space">
+            <h3>Space Invader</h3>
+            <p>Création d'un Space Invader, dans le cadre de l'initiation au TDD. </br>(Projet Universitaire)</p>
           </article>
 
           <article>
-            <button type="button" class="apparition"><a href="ressources/CV_Leo_Thinnes.pdf" target="_blank"> en savoir plus.</a></button>
+            <a href="https://github.com/LeoThinnes/Projet-Pilaf" target="_blank"><button type="button" class="apparition"> En savoir plus.</button></a>
             <img src="ressources/images/pilaf.png" alt="pilaf">
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pilaf</h3>
+            <p>Réalisation d'une solution de gestion d'entreprise pour un client fictif.</br>(Projet Universitaire) </p>
           </article>
         </div>
 
         <div class="ligneProjets">
           <article>
-            <button type="button" class="apparition"><a href="ressources/CV_Leo_Thinnes.pdf" target="_blank"> en savoir plus.</a></button>
+            <a href="https://github.com/LeoThinnes/Covoiturage" target="_blank"><button type="button" class="apparition"> En savoir plus.</button></a>
             <img src="ressources/images/php.png" alt="php">
+            <h3>&nbsp;Covoiturage</h3>
+            <p>Mise en place d'un site de covoiturage pour l'IUT, pour l'apprentissage du php.</br>(Projet Universitaire) </p>
           </article>
 
           <article>
-            <button type="button" class="apparition"><a href="ressources/CV_Leo_Thinnes.pdf" target="_blank"> en savoir plus.</a></button>
+            <a href="https://github.com/LeoThinnes/portfolio" target="_blank"><button type="button" class="apparition"> En savoir plus.</button></a>
             <img src="ressources/images/portfolio.png" alt="portfolio">
+            <h3> &nbsp;&nbsp;&nbsp; Portfolio</h3>
+            <p>Création de mon Portfolio dans le but de développer ma communication professionnelle. </br>(Projet Universitaire)</p>
           </article>
 
 
           <article>
-            <button type="button" class="apparition"><a href="ressources/CV_Leo_Thinnes.pdf" target="_blank"> en savoir plus.</a></button>
+            <a href="https://github.com/LeoThinnes/E-quarium" target="_blank"><button type="button" class="apparition"> En savoir plus.</button></a>
             <img src="ressources/images/e-quarium.png" alt="e-quarium">
+            <h3> &nbsp;E-quarium</h3>
+            <p>Projet Tuteuré de création d'un aquarium connecté, pour un véritable client.</br>(Projet Universitaire) </p>
           </article>
         </div>
 
       </div>
 
+
     </body>
     <footer>
-      <a href="contact.php" target="_blank"><img src="ressources/images/mail.png" alt="mail"></a>
-      <a href="https://github.com/LeoThinnes" target="_blank"><img src="ressources/images/git.png" alt="git"></a>
-      <a href="https://www.linkedin.com/in/l%C3%A9o-thinn%C3%A8s-a395471ba/" target="_blank"><img src="ressources/images/linkedin.png" alt="link"></a>
+      <a class="liens" href="contact.php" target="_blank"><img src="ressources/images/mail.png" alt="mail"></a>
+      <a class="liens" href="https://github.com/LeoThinnes" target="_blank"><img src="ressources/images/git.png" alt="git"></a>
+      <a class="liens" href="https://www.linkedin.com/in/l%C3%A9o-thinn%C3%A8s-a395471ba/" target="_blank"><img src="ressources/images/linkedin.png" alt="link"></a>
     </footer>
     </html>

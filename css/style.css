@@ -193,9 +193,10 @@ animation-name: slidein;
 	font-style: italic;
 }
 .btnProfil{
+  text-align: center;
 	display: flex;
 	margin:auto;
-	margin-top: 3%;
+	margin-top: 5%;
 	width: 15%;
 	border-radius: 20px;
 	background-color: #333;
@@ -211,7 +212,20 @@ animation-name: slidein;
 	transition: .3s all ease-in-out;
 }
 
-.Profil button a{
+.Profil a button {
+  text-align: center;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	display: flex;
+	margin: auto;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.Profil a {
+  display: flex;
+  text-align: center;
 	text-decoration: none;
 	color: white;
 	font-size: 20px;
@@ -250,12 +264,22 @@ article:hover{
 	transform: scale(1.1);
 }
 
-article .apparition{
+article a .apparition{
 	display: none;
 	z-index: 999;
 }
 
-article:hover .apparition{
+article h3{
+  display: none;
+  z-index: 999;
+}
+
+article p{
+  display: none;
+  z-index: 999;
+}
+
+article:hover a .apparition{
 	display: inline;
 	position: absolute;
 	padding: 5px 10px;
@@ -263,14 +287,37 @@ article:hover .apparition{
 	background-color: #333;
 	border-radius: 20px;
 	border: none;
-	margin-top: 130px;
+	margin-top: 200px;
 	margin-left: 75px;
 	width: 150px;
 	z-index: 999;
 	transition: .3s all ease-in-out;
 }
 
-article .apparition:hover{
+article:hover h3{
+  display: inline;
+  position: absolute;
+  font-size: 25px;
+	color: black;
+	margin-top: 0%;
+	margin-left: 25%;
+	z-index: 999;
+	transition: .3s all ease-in-out;
+}
+
+article:hover p{
+  display: inline;
+  position: absolute;
+	color: black;
+  font-size: 20px;
+	margin-top: 20%;
+	margin-left: 2%;
+  text-align: center;
+	z-index: 999;
+	transition: .3s all ease-in-out;
+}
+
+article a .apparition:hover{
 	transform: scale(1.1);
 	background-color: #FDA02A;
 	border: none;
@@ -288,8 +335,8 @@ article img{
 
 article:hover img {
 	transition: .3s all ease-in-out;
-	opacity: 0.3;
-	cursor: pointer;
+	opacity: 0.2;
+  box-shadow: 5px 5px 5px  black;
 	transform: scale(1.1);
 }
 
@@ -302,4 +349,113 @@ footer{
   background-color: #333;
   margin-top: 10%;
   display: flex;
+}
+
+footer .liens{
+  display: flex;
+  text-align: center;
+  margin: auto;
+}
+
+.CompLine{
+  margin-top: 2%;
+}
+
+.CompCol1 .CompLine img{
+  margin: auto;
+  width: 8%;
+}
+
+.CompCol1 .CompLine progress {
+  margin: auto;
+  width: 40%;
+  margin-bottom: 25px;
+  border-radius: 20px;
+}
+
+.CompCol2 .CompLine img{
+  margin: auto;
+  width: 12%;
+}
+
+.CompCol2 .CompLine progress {
+  margin: auto;
+  width: 60%;
+  margin-bottom: 25px;
+  border-radius: 20px;
+}
+
+.php img{
+  margin: auto;
+  margin-top: 2%;
+  width: 8%;
+}
+
+.php progress {
+  margin: auto;
+  width: 40%;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+::-webkit-progress-bar {
+ /* Required to get rid of the default background property */
+  background-color: #333;
+  box-shadow: 0 5px 5px -5px #333 inset;
+  border-radius: 20px;
+}
+
+::-moz-progress-bar {
+  background: none; /* Required to get rid of the default background property */
+  background-color: #FDA02A;
+  box-shadow: 0 5px 5px -5px #333 inset;
+  border-radius: 20px;
+}
+
+::-webkit-progress-value {
+  background-color: #FDA02A;
+  border-radius: 20px;
+}
+
+.CompCol1{
+  display: flex;
+  flex-direction: column;
+}
+.CompCol1 h3{
+  margin-left: 30%;
+  text-decoration: underline #FDA02A;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.CompCol1 .CompLine img{
+  margin-left: 15%;
+}
+
+.CompCol1 .php img{
+  margin-left: 15%;
+}
+
+.CompCol2{
+  display: flex;
+  flex-direction: column;
+}
+.CompCol2 h3{
+  margin-left: 30%;
+  text-decoration: underline #FDA02A;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.CompCol2 .CompLine img{
+  margin-left: 0%;
+}
+
+.CompCol2 .php img{
+  margin-left: 10%;
+}
+
+.enligne{
+  display: flex;
+  flex-direction: row;
 }

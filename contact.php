@@ -11,13 +11,13 @@
     <h1>Contact</h1>
     <form method="post">
         <label>Nom :</label>
-        <input type="text" name="nom" required >
+        <input type="text" name="nom" required placeholder="exemple : Denis Dupont">
         <label>Email :</label>
-        <input type="email" name="email" required >
+        <input type="email" name="email" required placeholder="exemple : denis.dupont@gmail.com">
         <label>Objet :</label>
-        <input type="text" name="objet" required >
+        <input type="text" name="objet" required placeholder="exemple : Informations sur...">
         <label>Message :</label>
-        <textarea name="message" required></textarea>
+        <textarea name="message" required placeholder="Votre message : "></textarea>
         <button type="submit"> Envoyer </button>
     </form>
     <?php
@@ -26,7 +26,7 @@
         $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
         $entete .= 'From: ' . $_POST['email'] . "\r\n";
 
-        $message = '<h1>Message envoyé depuis la page Contact</h1>
+        $message = '
         <p><b>Nom : </b>' . $_POST['nom'] . '<br>
         <b>Email : </b>' . $_POST['email'] . '<br><br>
         <b>Message : </b><br>' . $_POST['message'] . '</p>';
