@@ -1,8 +1,9 @@
+
 html{
   scroll-behavior: smooth;
 }
 
-nav {
+.stroke {
 	z-index:1000;
 	overflow: hidden;
    background-color: #333;
@@ -13,7 +14,7 @@ nav {
 	 box-shadow: 0px 2px 3px black;
 }
 
-nav a {
+.stroke a {
 	float: left;
   display: block;
   color: #f2f2f2;
@@ -24,22 +25,22 @@ nav a {
 	margin-left: 15px;
 }
 
-nav a,
-nav a:after,
-nav a:before {
+.stroke a,
+.stroke a:after,
+.stroke a:before {
   transition: all .5s;
 }
-nav a:hover {
+.stroke a:hover {
   color: white;
 }
 
-nav.stroke a,
-nav.fill a {
+.stroke a,
+.stroke.fill a {
   position: relative;
 }
 
-nav.stroke a:after,
-nav.fill a:after {
+.stroke a:after,
+.stroke.fill a:after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -52,12 +53,10 @@ nav.fill a:after {
   height: 3px;
 }
 
-nav.stroke a:hover:after {
+.stroke a:hover:after {
   width: 100%;
 	height: 2px;
 }
-
-
 
 body {
 	background-color: white;
@@ -72,10 +71,11 @@ body {
 	flex-direction: row;
 }
 .Accueil img {
-width: 350px;
+width: 23%;
 border-radius: 50%;
-margin-left: 10%;
+margin-left: 15%;
 margin-top: 15%;
+margin-bottom: 0%;
 }
 
 .textAccueil {
@@ -112,7 +112,7 @@ animation-name: slidein;
 	position: relative;
 	width: 100%;
 	height: auto;
-	margin-top: 15%;
+	margin-top: 15vw;
 }
 
 .Profil h1{
@@ -340,10 +340,19 @@ article:hover img {
 	transform: scale(1.1);
 }
 
-.ligneProjets{
+.titreProj{
+  display: none;
+}
+
+.ligneProjets1{
 display: flex;
 flex-direction: row;
 	}
+
+  .ligneProjets2{
+  display: flex;
+  flex-direction: row;
+  	}
 
 footer{
   background-color: #333;
@@ -458,4 +467,476 @@ footer .liens{
 .enligne{
   display: flex;
   flex-direction: row;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .stroke {
+  	z-index:1000;
+  	overflow: hidden;
+     background-color: #333;
+     position: fixed;
+     top: 0;
+  	 left:0;
+     width: 100%;
+  	 box-shadow: 0px 2px 3px black;
+  }
+
+  .stroke a {
+  	float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  	font-size: 30px;
+  	margin-left: 10px;
+  }
+
+  .stroke a,
+  .stroke a:after,
+  .stroke a:before {
+    transition: all .5s;
+  }
+  .stroke a:hover {
+    color: white;
+  }
+
+  .stroke a,
+  .stroke.fill a {
+    position: relative;
+  }
+
+  .stroke a:after,
+  .stroke.fill a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #FDA02A;
+    height: 3px;
+  }
+
+  .stroke a:hover:after {
+    width: 100%;
+  	height: 2px;
+  }
+
+
+body {
+	background-color: white;
+	margin-left: 0px;
+	margin-right: 0px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.Accueil{
+	display: flex;
+	flex-direction: column;
+}
+.Accueil img {
+width: 40%;
+border-radius: 50%;
+margin-left:auto;
+margin-right: auto;
+margin-top: 15%;
+margin-bottom: 0%;
+}
+
+.textAccueil {
+margin-left: auto;
+margin-right: auto;
+margin-top: 15%;
+}
+
+.textAccueil h1{
+font-size: 70px;
+text-decoration: underline #FDA02A;
+animation-duration: 3s;
+animation-name: slidein;
+}
+
+.textAccueil h2{
+font-size: 50px;
+animation-duration: 3s;
+animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 30%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.separationProfil img{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-top: 15vw;
+}
+
+.Profil h1{
+	text-align: center;
+	font-size: 65px;
+	margin-top: 5%;
+	text-decoration: underline #FDA02A;
+}
+
+.Profil_Text{
+	display: flex;
+	text-align: justify;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-size: 35px;
+}
+
+.Profil h2{
+	text-align: center;
+	font-size: 55px;
+	margin-top: 5%;
+	text-decoration: underline #FDA02A;
+}
+
+.etudesExp{
+	margin-top: 2%;
+	display: flex;
+	flex-direction: column;
+  margin-left: 0;
+}
+
+.etudes h3{
+	font-size: 40px;
+	text-decoration: underline 2px #FDA02A;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.etudes{
+	margin-left: 10%;
+  margin-right: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.experience{
+	margin-left: 10%;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.experience h3{
+	font-size: 40px;
+	text-decoration: underline 3px #FDA02A;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+}
+
+.blocEtu {
+	border-left: solid #FDA02A;
+	margin-bottom: 3%;
+}
+
+.blocEtu h4 {
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	font-size: 35px;
+	text-decoration: underline;
+}
+
+.blocEtu h5 {
+	margin-top: 0px;
+	margin-left: auto;
+	font-size: 32px;
+	margin-bottom: 0px;
+}
+
+.blocEtu p {
+	margin-left: 1%;
+	font-size: 28px;
+	font-style: italic;
+}
+
+.btnProfil{
+  text-align: center;
+	display: flex;
+	margin:auto;
+	margin-top: 5%;
+	border-radius: 20px;
+	background-color: #333;
+	border: none;
+	transition: .3s all ease-in-out;
+}
+
+
+.Profil a button {
+  text-align: center;
+	text-decoration: none;
+	color: white;
+	font-size: 35px;
+	display: flex;
+	margin: auto;
+	margin-top: 4px;
+	margin-bottom: 4px;
+  width: 40%;
+}
+
+.Profil a {
+  display: flex;
+  text-align: center;
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	display: flex;
+	margin: auto;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.separationProjets img{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-top: 15%;
+}
+
+.Projets h1{
+	text-align: center;
+	font-size: 65px;
+	margin-top: 5%;
+	text-decoration: underline #FDA02A;
+}
+
+article {
+	display: flex;
+	width: 300px;
+	height: 260px;
+	margin-left: 7%;
+	margin-right: auto;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	border-radius: 5%;
+}
+
+article:hover{
+	transform: scale(1.1);
+}
+
+article a .apparition{
+	display: none;
+	z-index: 999;
+}
+
+article h3{
+  display: none;
+  z-index: 999;
+}
+
+article p{
+  display: none;
+  z-index: 999;
+}
+
+article a .apparition{
+	display: inline;
+	position: absolute;
+	padding: 5px 10px;
+	color: white;
+	background-color: #333;
+	border-radius: 20px;
+	border: none;
+	margin-top: 100px;
+	margin-left: 50px;
+	width: 200px;
+	z-index: 999;
+	transition: .3s all ease-in-out;
+  font-size: 25px;
+}
+
+article h3{
+display: none;
+}
+
+article p{
+  display: none;
+}
+
+article a .apparition:hover{
+	display: none;
+}
+article img{
+	width: 300px;
+	height: 260px;
+	transition: .3s all ease-in-out;
+	border-radius: 5%;
+	box-shadow: 1px 1px 5px  grey;
+	background-color: #dddd;
+  margin-bottom: 2%;
+  opacity: 0.5;
+}
+
+article:hover img {
+	display: none;
+}
+
+.ligneProjets1{
+display: flex;
+flex-direction: column;
+margin-left: auto;
+margin-right: auto;
+	}
+
+  .ligneProjets2{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  	}
+
+.projMob{
+  display: flex;
+  flex-direction: row;
+}
+
+.titreProj{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  font-size: 30px;
+}
+footer{
+  background-color: #333;
+  margin-top: 10%;
+  display: flex;
+}
+
+footer .liens{
+  display: flex;
+  text-align: center;
+  margin: auto;
+}
+.Comp h1{
+  font-size: 65px;
+}
+.CompLine{
+  margin-top: 2%;
+}
+
+.CompCol1 .CompLine img{
+  margin: auto;
+  width: 8%;
+}
+
+.CompCol1 .CompLine progress {
+  margin: auto;
+  width: 40%;
+  margin-bottom: 25px;
+  border-radius: 20px;
+}
+
+.CompCol2 .CompLine img{
+  margin: auto;
+  width: 8%;
+}
+
+.CompCol2 .CompLine progress {
+  margin: auto;
+  width: 40%;
+  margin-bottom: 25px;
+  border-radius: 20px;
+}
+
+.php img{
+  margin: auto;
+  margin-top: 2%;
+  width: 8%;
+}
+
+.php progress {
+  margin: auto;
+  width: 40%;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+::-webkit-progress-bar {
+ /* Required to get rid of the default background property */
+  background-color: #333;
+  box-shadow: 0 5px 5px -5px #333 inset;
+  border-radius: 20px;
+}
+
+::-moz-progress-bar {
+  background: none; /* Required to get rid of the default background property */
+  background-color: #FDA02A;
+  box-shadow: 0 5px 5px -5px #333 inset;
+  border-radius: 20px;
+}
+
+::-webkit-progress-value {
+  background-color: #FDA02A;
+  border-radius: 20px;
+}
+
+.CompCol1{
+  display: flex;
+  flex-direction: column;
+}
+.CompCol1 h3{
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: underline #FDA02A;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.CompCol1 .CompLine img{
+  margin-left: 25%;
+}
+
+.CompCol1 .php img{
+  margin-left: 25%;
+}
+
+.CompCol2{
+  display: flex;
+  flex-direction: column;
+}
+.CompCol2 h3{
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: underline #FDA02A;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.CompCol2 .CompLine img{
+  margin-left: 25%;
+}
+
+.CompCol2 .php img{
+  margin-left: 10%;
+}
+
+.enligne{
+  display: flex;
+  flex-direction: column;
+}
+
 }

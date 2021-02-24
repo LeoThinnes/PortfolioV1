@@ -65,3 +65,75 @@ p{
   margin: auto;
   text-align: center;
 }
+
+@media screen and (max-width: 1000px) {
+  body{
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    font-size: 85px;
+    text-decoration: underline #FDA02A;
+  }
+  form{
+    margin-top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  label{
+    font-size: 30px;
+    margin-left: 2%;
+  }
+  input{
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    border: none;
+    font-size: 20px;
+  }
+
+  textarea{
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 2%;
+    border: none;
+    font-size: 20px;
+  }
+
+  button{
+    width: 40%;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-color: #FDA02A;
+    border: none;
+    transition: .3s all ease-in-out;
+    font-size: 30px;
+  }
+  button:hover{
+  	transform: scale(1.1);
+  	border: none;
+  	box-shadow: 2px 2px 4px  grey;
+  	transition: .3s all ease-in-out;
+  }
+
+  p{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+  }
+
+}
