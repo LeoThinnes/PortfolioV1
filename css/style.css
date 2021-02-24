@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'caf';
+  src: url(../ressources/cafe.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 html{
   scroll-behavior: smooth;
+  font-family:sans-serif;
 }
 
 .stroke {
@@ -84,6 +91,7 @@ margin-top: 15%;
 }
 
 .textAccueil h1{
+font-family: 'caf';
 font-size: 60px;
 text-decoration: underline #FDA02A;
 animation-duration: 3s;
@@ -91,6 +99,7 @@ animation-name: slidein;
 }
 
 .textAccueil h2{
+  font-family: 'caf';
 font-size: 40px;
 animation-duration: 3s;
 animation-name: slidein;
@@ -479,6 +488,7 @@ footer .liens{
      top: 0;
   	 left:0;
      width: 100%;
+     height: 6%;
   	 box-shadow: 0px 2px 3px black;
   }
 
@@ -487,10 +497,12 @@ footer .liens{
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 25px 10px;
     text-decoration: none;
-  	font-size: 30px;
+  	font-size: 200%;
   	margin-left: 10px;
+    margin-bottom: 1%;
+    margin-top: 1%;
   }
 
   .stroke a,
@@ -540,11 +552,11 @@ body {
 	flex-direction: column;
 }
 .Accueil img {
-width: 40%;
+width: 50%;
 border-radius: 50%;
 margin-left:auto;
 margin-right: auto;
-margin-top: 15%;
+margin-top: 35%;
 margin-bottom: 0%;
 }
 
@@ -720,6 +732,7 @@ animation-name: slidein;
 	text-decoration: underline #FDA02A;
 }
 
+
 article {
 	display: flex;
 	width: 300px;
@@ -750,7 +763,7 @@ article p{
   z-index: 999;
 }
 
-article a .apparition{
+article:hover a .apparition{
 	display: inline;
 	position: absolute;
 	padding: 5px 10px;
@@ -758,24 +771,42 @@ article a .apparition{
 	background-color: #333;
 	border-radius: 20px;
 	border: none;
-	margin-top: 100px;
-	margin-left: 50px;
-	width: 200px;
+	margin-top: 200px;
+	margin-left: 75px;
+	width: 90%;
 	z-index: 999;
 	transition: .3s all ease-in-out;
+}
+
+article:hover h3{
+  display: inline;
+  position: absolute;
   font-size: 25px;
+	color: black;
+	margin-top: 0%;
+	margin-left: 25%;
+	z-index: 999;
+	transition: .3s all ease-in-out;
 }
 
-article h3{
-display: none;
-}
-
-article p{
-  display: none;
+article:hover p{
+  display: inline;
+  position: absolute;
+	color: black;
+  font-size: 20px;
+	margin-top: 20%;
+	margin-left: 2%;
+  text-align: center;
+	z-index: 999;
+	transition: .3s all ease-in-out;
 }
 
 article a .apparition:hover{
-	display: none;
+	transform: scale(1.1);
+	background-color: #FDA02A;
+	border: none;
+	box-shadow: 2px 2px 4px  grey;
+	transition: .3s all ease-in-out;
 }
 article img{
 	width: 300px;
@@ -785,11 +816,13 @@ article img{
 	box-shadow: 1px 1px 5px  grey;
 	background-color: #dddd;
   margin-bottom: 2%;
-  opacity: 0.5;
 }
 
 article:hover img {
-	display: none;
+	transition: .3s all ease-in-out;
+	opacity: 0.2;
+  box-shadow: 5px 5px 5px  black;
+	transform: scale(1.1);
 }
 
 .ligneProjets1{
@@ -811,14 +844,6 @@ margin-right: auto;
   flex-direction: row;
 }
 
-.titreProj{
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  font-size: 30px;
-}
 footer{
   background-color: #333;
   margin-top: 10%;
