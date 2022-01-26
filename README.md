@@ -4,7 +4,7 @@ Ce projet est la création d'un portfolio professionnel afin d'améliorer ma com
 Sur ce site vous pourrez retrouver toutes les informations utiles sur moi, mon CV mais aussi mes projets réalisés.😁
 </br></br>
 Ce site a été réalisé en HTML/CSS uniquement.</br></br>
-portfolio disponible sur [https://leothinnes.com](https://leothinnes.com)
+portfolio disponible sur [https://leothinnes.com](https://leothinnes.com/V1)
 
 Voici un apperçu de ce dernier :
 ![](imgPortfolio.JPG)
