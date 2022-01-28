@@ -6,5 +6,5 @@ Sur ce site vous pourrez retrouver toutes les informations utiles sur moi, mon C
 Ce site a été réalisé en HTML/CSS uniquement.</br></br>
 portfolio disponible sur [https://leothinnes.com/V1](https://leothinnes.com/V1)
 
-Voici un apperçu de ce dernier :
+## Voici un apperçu de ce dernier :
 ![](imgPortfolio.JPG)
